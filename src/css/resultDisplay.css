@@ -1,0 +1,48 @@
+.results-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.results-box {
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.alert {
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.alert.warning {
+  background-color: #fff3e0;
+  border: 1px solid #ff9800;
+  color: #e65100;
+}
+
+.alert.info {
+  background-color: #e3f2fd;
+  border: 1px solid #64b5f6;
+  color: #0d47a1;
+}
+
+.precautions h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 20px;
+}

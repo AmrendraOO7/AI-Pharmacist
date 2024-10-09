@@ -1,0 +1,140 @@
+.symptom-selector {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.symptom-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.symptom-list {
+    margin-bottom: 20px;
+}
+
+.symptom-item {
+    margin-bottom: 12px;
+}
+
+.symptom-label {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    user-select: none;
+}
+
+.symptom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #666;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.symptom-checkbox:checked~.checkbox-custom {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+.checkbox-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.symptom-checkbox:checked~.checkbox-custom:after {
+    display: block;
+}
+
+.label-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    padding-top: 2px;
+}
+
+.additional-symptoms {
+    margin: 20px 0;
+}
+
+.symptoms-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+}
+
+.symptoms-textarea:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.submit-button {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #1976D2;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .symptom-selector {
+        padding: 15px;
+    }
+
+    .symptom-title {
+        font-size: 1.2rem;
+    }
+
+    .label-text {
+        font-size: 13px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+    }
+}
