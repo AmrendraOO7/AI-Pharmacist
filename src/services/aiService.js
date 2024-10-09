@@ -1,9 +1,10 @@
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { MEDICAL_DATA } from "../data/medicalData";
+import { API_KEY } from "../helper/common";
 
 // const GOOGLE_API_KEY = process.env.API_KEY;
 
-const GOOGLE_API_KEY = 'AIzaSyAXvhn9H4zEGK9FphN4mBhaknXXF0TqW7Q';
+const GOOGLE_API_KEY = API_KEY;
 
 class AIService {
     constructor() {
