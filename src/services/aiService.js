@@ -28,7 +28,7 @@ class serviceAi {
 
             Patient Symptoms: ${symptoms}
 
-            Please provide a detailed response using only the data from the MEDICAL_DATA dataset: ${JSON.stringify(MEDICAL_DATA)}
+            Please provide a detailed response using the data from the MEDICAL_DATA dataset: ${JSON.stringify(MEDICAL_DATA)} and then your assistance.
         `;
 
         try {
