@@ -3,9 +3,11 @@
 
 In the project directory, you can run:
 
-### add `API_KEY` to `common.js` or any file and import it to `aiService.js`
+1. add `API_KEY` by creating `common.js` or any file 
 
-export const API_KEY = 'your_key';
+## export const API_KEY = 'your_key';
+
+2. then and import it to `aiService.js`
 
 ### `npm start`
 
