@@ -9,10 +9,7 @@ const ResultsDisplay = ({ results, symptoms }) => {
             {results && (
                 <div className=''>
                     <h2>Recommendation from AI-Pharmasist for -{symptoms}</h2>
-                    <strong>
                         <ReactMarkdown>{results}</ReactMarkdown>
-                    </strong>
-
                     <div className="">
                         <h3>General Precautions</h3>
                         {MEDICAL_DATA.generalPrecautions.map((precaution, index) => (

@@ -3,7 +3,7 @@ import './App.css';
 import Disclaimer from './components/disclaimer';
 import ResultsDisplay from './components/resultsDisplay';
 import SymptomSelector from './components/symptomSelector';
-import aiService from './services/aiService';
+import serviceAi from './services/aiService';
 
 
 
@@ -19,10 +19,8 @@ function App() {
     setCurrentSymptoms(symptoms);
     {
       try {
-        const advice = await aiService.getAdvice(symptoms);
-        let cleanData = advice.replace('**', '')
-        // setResults(JSON.parse(cleanData))
-        setResults(cleanData);
+        const advice = await serviceAi.getAdviceFor(symptoms);
+        setResults(advice);
       } catch (error) {
         alert('An error occurred while getting medical advice. Please try again.');
         throw error

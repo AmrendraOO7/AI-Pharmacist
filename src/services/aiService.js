@@ -6,7 +6,7 @@ import { API_KEY } from "../helper/common";
 
 const GOOGLE_API_KEY = API_KEY;
 
-class AIService {
+class serviceAi {
     constructor() {
         if (!GOOGLE_API_KEY) {
             throw new Error("Google API Key is not set");
@@ -18,7 +18,7 @@ class AIService {
         });
     }
 
-    async getAdvice(symptoms) {
+    async getAdviceFor(symptoms) {
         const prompt = `
             You are an experienced AI Pharmasist. Based on the following symptoms, provide:
             1. Possible conditions
@@ -44,4 +44,4 @@ class AIService {
     }
 }
 
-export default new AIService();
+export default new serviceAi();
