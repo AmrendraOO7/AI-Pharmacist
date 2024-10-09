@@ -59,7 +59,7 @@ const SymptomSelector = ({ onSubmit }) => {
                 onClick={handleSubmit}
                 disabled={selectedSymptoms.length === 0 && !additionalSymptoms}
             >
-                Get Advice from pharmasist
+                Get Advice from pharma-Assistant
             </button>
         </div>
     )

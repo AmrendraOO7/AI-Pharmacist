@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">AI Pharmacist Assistant</h1>
+      <h1 className="title">AI Pharma Assistant</h1>
       <Disclaimer />
 
       <SymptomSelector onSubmit={handleSubmit} />

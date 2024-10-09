@@ -17,7 +17,7 @@ class AIService {
 
     async getAdvice(symptoms) {
         const prompt = `
-            You are an experienced AI Pharmacist. Based on the following symptoms, provide:
+            You are an experienced AI Pharmasist. Based on the following symptoms, provide:
             1. Possible conditions
             2. Recommended over-the-counter medications
             3. Important precautions
